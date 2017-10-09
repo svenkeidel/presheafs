@@ -1,0 +1,40 @@
+\newcommand{\lst}[1]{\lstinline!#1!}
+\newcommand{\id}[0]{\mathrm{id}}
+\newcommand{\Cat}[1]{\mathbf{#1}}
+\newcommand{\iso}[0]{\cong}
+\newcommand{\adjoint}[0]{\dashv}
+\newcommand{\Hom}[3]{\mathrm{Hom}_{#1}(#2,#3)}
+\newcommand{\Nat}[2]{\mathrm{Nat}(#1,#2)}
+\newcommand{\Homm}[2]{\mathrm{Hom}(#1,#2)}
+
+% Limits
+\renewcommand{\lim}[1]{%
+  \mathop{\mathrm{lim}}\limits_{%
+    \substack{
+    \tikz[baseline=-1ex] \draw[-stealth,line width=.4pt] (3ex,0ex) -- (0ex,0ex);
+    \vspace{-0.5ex}
+    \\
+    #1
+    }
+  }
+}
+\newcommand{\colim}[1]{%
+  \mathop{\mathrm{lim}}\limits_{%
+    \substack{
+    \tikz[baseline=-1ex] \draw[-stealth,line width=.4pt] (0ex,0ex) -- (3ex,0ex);
+    \vspace{-0.5ex}
+    \\
+    #1
+    }
+  }
+}
+
+% Categories
+\newcommand{\Op}[1]{#1^{\mathbf{op}}}
+\newcommand{\Arr}[1]{#1^{\rightarrow}}
+\newcommand{\comma}[2]{#1 \downarrow #2}
+\newcommand{\Presheaf}[1]{\widehat{#1}}
+\newcommand{\slice}[2]{#1 / #2}
+\newcommand{\Set}[0]{\Cat{Set}}
+\newcommand{\Graphs}{\Cat{Graphs}}
+
